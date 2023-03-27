@@ -1,0 +1,297 @@
+#bg {
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Header */
+
+#line {
+    background-color: rgb(8, 201, 255);
+    height: 2px;
+    width: 100%;
+}
+
+nav {
+    border-bottom-width: 2px;
+    border-bottom-color: rgb(231, 231, 231);
+    border-bottom-style: solid;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    font-size: 3.4vh;
+    font-family: "Century Gothic";
+    color: rgb(27, 27, 27);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+
+nav a:hover {
+    animation-name: colorchange;
+    animation-duration: 0.5s;
+    color: rgb(8, 201, 255);
+}
+
+@keyframes colorchange {
+    from {
+        color: rgb(27, 27, 27);
+    }
+    to {
+        color: rgb(8, 201, 255);
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 75%;
+}
+
+
+/* Container */
+
+.main {
+    display: grid;
+    grid-template-columns: 14% 72% 14%;
+}
+
+.container {
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-left-color: rgb(231, 231, 231);
+    border-left-style: solid;
+    border-right-color: rgb(231, 231, 231);
+    border-right-style: solid;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+.titlec {
+    height: 65vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 1s ease-in-out;
+    background-size: 105%;
+}
+
+.titlec #title {
+    font-size: 10vh;
+    font-family: "Century Gothic";
+    color: rgb(27, 27, 27);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+}
+
+.titlec #subtitle {
+    font-size: 3.5vh;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(27, 27, 27);
+    text-transform: uppercase;
+    text-align: center;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding-top: 10vh;
+}
+
+
+/* Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: 35vh 35vh 35vh;
+    grid-template-rows: 20vh 20vh 20vh;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2vh 0 2vh 0;
+    overflow: hidden;
+}
+
+.cards a {
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    transition: all 1s ease-in-out;
+    background-size: 120%;
+}
+
+.cards a:hover {
+    animation-name: borderchange;
+    animation-duration: 0.5s;
+    border-color: rgb(8, 201, 255);
+    background-size: 140%;
+}
+
+@keyframes borderchange {
+    from {
+        border-color: white;
+    }
+    to {
+        border-color: rgb(8, 201, 255);
+    }
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card h1 {
+    font-size: 3.8vh;
+    font-family: "Century Gothic";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    /* position: absolute; */
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+}
+
+.card p {
+    font-size: 2.7vh;
+    font-family: "Century Gothic";
+    color: rgb(255, 255, 255);
+    text-align: left;
+    /* position: absolute; */
+    box-sizing: border-box;
+    margin-left: 5px;
+    margin-top: 1px;
+    width: 33vh;
+}
+
+@media screen and (max-width: 1664px) {
+    /* .titlec #title {
+        font-size: 90px;
+    } */
+    /* .titlec #subtitle {
+        font-size: 27px;
+    } */
+    nav a {
+        font-size: 2.9vh;
+    }
+    
+}
+@media screen and (max-width: 1150px) {
+    nav a {
+        font-size: 3.5vh;
+    }
+    .cards {
+        grid-template-columns: 30vh 30vh;
+        grid-template-rows: 20vh 20vh 20vh;
+    }
+    .cards a {
+        background-size: 132%;
+    }
+    .cards a:hover {
+        background-size: 152%;
+    }
+    .card h1 {
+        font-size: 3.3vh;
+    }
+    .card p {
+        font-size: 2.2vh;
+        width: 30vh;
+    }
+    .titlec {
+        height: 50vh;
+    }
+    .titlec {
+        height: 50vh;
+    }
+    .titlec #title {
+        font-size: 7.5vh;
+    }
+    .titlec #subtitle {
+        font-size: 4.5vh;
+    } 
+}
+
+
+/* Fotter */
+
+.info {
+    border-top-width: 2px;
+    border-top-color: #313131;
+    border-top-style: solid;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0px;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 40vh 40vh;
+    grid-auto-rows: 130px;
+    align-items: start;
+}
+
+.info ul,
+a,
+h2 #titlu {
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+}
+
+.info li {
+    font-size: 15px;
+    font-family: "Century Gothic";
+    color: rgb(27, 27, 27);
+}
+
+#titlu {
+    font-size: 18px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(27, 27, 27);
+}
+
+#line2 {
+    background-color: rgb(8, 201, 255);
+    height: 2px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.copyright {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 5px 0 0 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Century Gothic";
+    color: rgb(27, 27, 27);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}

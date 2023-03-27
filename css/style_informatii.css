@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+}
+
+#bg {
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Header */
+
+#line {
+    background-color: rgb(8, 201, 255);
+    height: 2px;
+    width: 100%;
+}
+
+nav {
+    border-bottom-width: 2px;
+    border-bottom-color: rgb(231, 231, 231);
+    border-bottom-style: solid;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    font-size: 3.4vh;
+    font-family: "Century Gothic";
+    color: rgb(27, 27, 27);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+
+nav a:hover {
+    animation-name: colorchange;
+    animation-duration: 0.5s;
+    color: rgb(8, 201, 255);
+}
+
+@keyframes colorchange {
+    from {
+        color: rgb(27, 27, 27);
+    }
+    to {
+        color: rgb(8, 201, 255);
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 75%;
+}
+
+/* Container */
+
+.main {
+    display: grid;
+    grid-template-columns: 14% 72% 14%;
+}
+
+.container {
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-left-color: rgb(231, 231, 231);
+    border-left-style: solid;
+    border-right-color: rgb(231, 231, 231);
+    border-right-style: solid;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+.titlec {
+    height: 40vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 5s ease-in-out;
+    background-size: 100%;
+}
+
+.titlec #title {
+    font-size: 100px;
+    font-family: "Century Gothic";
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+}
+
+.textc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2vh 0 5vh 0;
+}
+
+.textc p {
+    font-size: 25px;
+    /* font-family: "Franklin Gothic Medium"; */
+    font-family: "Calibri";
+    color: rgb(27, 27, 27);
+    text-align: center;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 90%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+.titlec:hover {
+    background-size: 115%;
+}
+
+@media screen and (max-width: 1664px) {
+    
+    .titlec #title {
+        font-size: 70px;
+    }
+    .titlec {
+        height: 35vh;
+    }
+}
+
+.side {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    margin: 30px auto 30px auto;
+    justify-content: center;
+    align-content: center;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px auto 30px auto;
+    align-items: center;
+    box-sizing: border-box;
+    width: 60vw;
+    height: 60vh;
+}
+
+.image img {
+    width: auto;
+    height: 100%;
+}
+
+.image h3 {
+    font-size: 16px;
+    font-family: "Arial";
+    color: rgb(27, 27, 27);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 0 0;
+}
+
+.image video {
+    width: auto;
+    height: 100%;
+}
+
+@media screen and (max-height: 964px) {
+    .container #title {
+        font-size: 85px;
+    }
+    .container #subtitle {
+        font-size: 25px;
+    }
+}
+
+
+/* Fotter */
+
+.info {
+    border-top-width: 2px;
+    border-top-color: #313131;
+    border-top-style: solid;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0px;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 40vh 40vh;
+    grid-auto-rows: 130px;
+    align-items: start;
+}
+
+.info ul,
+a,
+#titlu {
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+}
+
+.info li {
+    font-size: 15px;
+    font-family: "Century Gothic";
+    color: rgb(27, 27, 27);
+}
+
+#titlu {
+    font-size: 18px;
+    font-family: "Franklin Gothic Medium";
+    color: rgb(27, 27, 27);
+}
+
+#line2 {
+    background-color: rgb(8, 201, 255);
+    height: 2px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.copyright {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 5px 0 0 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Century Gothic";
+    color: rgb(27, 27, 27);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
